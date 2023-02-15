@@ -24,7 +24,9 @@
       1.用于带外管理 (out-of-band management) 的 TCP/IP 网络；
       2.用于数据访问的高性能结构。
 
-      
+
+      DAOS 服务器是一个多租户守护进程，运行在物理节点、VM 或容器上，管理分配给 DAOS 本地连接的 SCM (Storage-Class Memory) 和 NVM (Non-Volatile Memory) 存储。它监听由 IP 地址和 TCP 端口号寻址的管理端口，以及由网络 URI 寻址的一个或多个结构端点。
+
 
 
       
