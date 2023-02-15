@@ -3,6 +3,6 @@
 
  DAOS
     什么是DAOS?
-    
+    DAOS： Distributed Asychronous Object Storage  分布式异步对象存储 (属于高性能的分布式存储系统)。
 
 
