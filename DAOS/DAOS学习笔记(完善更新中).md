@@ -4,5 +4,20 @@
  DAOS
     什么是DAOS?
     DAOS： Distributed Asychronous Object Storage  分布式异步对象存储 (属于高性能的分布式存储系统)。
+   可以简单将DAOS理解为软件栈 + 硬件栈 对象存储容器。
+   (<软件(PMDK+SPDK) + 硬件(nvme)>)
 
+   看文档说明，应该是和 k-v数据库很像（本身对象存储就是KV存储）。只不过DAOS 是软硬件一体，intel 提供DAOS 软件（api）配合 nvme和ram等硬件，合体成DAOS，变成了一个kv分布式数据库。
+
+   分布式异步对象存储 (DAOS) 是一个开源的对象存储系统，专为大规模分布式非易失性内存 (NVM, Non-Volatile Memory) 设计，利用了 SCM(Storage-Class Memory，比如intel的傲腾) 和 NVMe(Non-Volatile Memory express) 等的下一代 NVM 技术。
+
+   DAOS 服务器将其元数据保存在持久内存中，而将数据保存在 NVMe 固态盘中。
+
+为什么要用DAOS
+   上一代的分布式存储是针对机械硬盘设计和优化的，现在固态硬盘已经大量使用，上一代分布式存储软件已经不适应。需要新一代分布式存储软件--比如：DAOS。
+
+介绍DAOS(分布式异步对象存储)的架构组件构成
+
+
+      
 
