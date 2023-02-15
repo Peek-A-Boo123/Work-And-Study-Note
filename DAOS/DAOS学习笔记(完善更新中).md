@@ -27,6 +27,9 @@
 
       DAOS 服务器是一个多租户守护进程，运行在物理节点、VM 或容器上，管理分配给 DAOS 本地连接的 SCM (Storage-Class Memory) 和 NVM (Non-Volatile Memory) 存储。它监听由 IP 地址和 TCP 端口号寻址的管理端口，以及由网络 URI 寻址的一个或多个结构端点。
 
+      DAOS 服务器是通过 YAML 文件 /etc/daos/daos_server.yml（可通过命令行指定的其他路径）进行配置的。服务的启动和停止可以与不同的守护进程管理或编排框架集成（systemd 脚本、Kubernetes 服务、或类似 pdsh 和 srun 的并行启动程序）。
+
+      DAOS 系统由一个系统名标识，它由一组连接到同一结构的 DAOS 服务器组成。两个不同的系统由两组不相交的服务器组成，彼此不能相互协调。DAOS Pool 也不能跨多个系统。
 
 
       
